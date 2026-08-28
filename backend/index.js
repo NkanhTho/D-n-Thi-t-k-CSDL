@@ -10,9 +10,8 @@ const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
 const { verifyToken, checkRole } = require('./middleware/authMiddleware');
 
-app.get('/api/profile', verifyToken, (req, res) => {
-  res.json({ message: 'Đây là thông tin của bạn', user: req.user });
-});
+const userRoutes = require('./routes/userRoutes');
+app.use('/api/users', userRoutes);
 
 app.get('/', (req, res) => res.send('Backend đang chạy!'));
 
