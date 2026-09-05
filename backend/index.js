@@ -16,4 +16,15 @@ app.use('/api/users', userRoutes);
 app.get('/', (req, res) => res.send('Backend đang chạy!'));
 
 const PORT = process.env.PORT || 3000;
+const reviewRoutes = require('./routes/reviewRoutes');
+app.use('/api/reviews', reviewRoutes);
+
+const collectionRoutes = require('./routes/collectionRoutes');
+app.use('/api/collections', collectionRoutes);
+
+const postRoutes = require('./routes/postRoutes');
+app.use('/api/posts', postRoutes);
+
+const workshopRoutes = require('./routes/workshopRoutes');
+app.use('/api/workshops', workshopRoutes);
 app.listen(PORT, () => console.log(`Server chạy ở port ${PORT}`));
