@@ -28,3 +28,6 @@ app.use('/api/posts', postRoutes);
 const workshopRoutes = require('./routes/workshopRoutes');
 app.use('/api/workshops', workshopRoutes);
 app.listen(PORT, () => console.log(`Server chạy ở port ${PORT}`));
+
+const bookingRoutes = require('./routes/bookingRoutes');
+app.use('/api/bookings', bookingRoutes);
