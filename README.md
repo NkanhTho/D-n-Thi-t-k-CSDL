@@ -7,11 +7,6 @@ cd backend
 npm install
 npm run dev
 
-## Cách chạy mobile app
-cd mobile
-flutter pub get
-flutter run
-
 ## Thành viên
 - Người 1 — Kiến trúc & Core Backend
 - Người 2 — Booking & Resource
