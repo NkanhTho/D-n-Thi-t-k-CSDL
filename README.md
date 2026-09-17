@@ -2,17 +2,17 @@
 
 Nền tảng kết nối cộng đồng nhiếp ảnh phim với dịch vụ phòng tối và studio.
 
-## Cách chạy backend
-cd backend
-npm install
-npm run dev
 
 ## Thành viên
-- Người 1 — Kiến trúc & Core Backend
-- Người 2 — Booking & Resource
-- Người 3 — Service Package & Payment
-- Người 4 — Mobile App
-- Người 5 — Community, Expert, Admin & AI
+Người 1: users — tài khoản, xác thực, phân quyền
+
+Người 2: spaces, resources — quản lý phòng/thiết bị; bookings, booking_resources — đặt chỗ chống trùng lịch; maintenance_schedules — lịch bảo trì; cột checkin_at/checkout_at trong bookings — check-in/check-out; cột stock_quantity/unit trong resources — tồn kho vật tư
+
+Người 3: transactions — thanh toán; complaints — khiếu nại; chat_logs — chatbot AI; service_packages, package_items — gói dịch vụ; categories, space_categories, resource_categories, post_categories — danh mục
+
+Người 4: favorites — phòng yêu thích (khách lưu lại phòng quan tâm); notifications — thông báo (xác nhận đặt chỗ, thanh toán, nhắc lịch)
+
+Người 5: reviews — đánh giá; photo_collections, photos — bộ sưu tập ảnh; posts — bài viết; workshops, workshop_registrations — workshop
 
 
 
